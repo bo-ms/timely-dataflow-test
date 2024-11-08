@@ -1,0 +1,8 @@
+[package]
+name = "concat_join_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+timely="*"
+differential-dataflow = "*"
