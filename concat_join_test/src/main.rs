@@ -1,18 +1,13 @@
 fn main() {
-    concat();
+    concatenate();
     join();
 }
 
-struct data {
-    timestamp: i32,
-    data: Vec<String>,
-}
-
-fn concat() {
+fn concatenate() {
     use timely::dataflow::operators::input::Handle;
     use timely::dataflow::operators::{Concatenate, Filter, Input, Inspect};
     use timely::*;
-    print!("In function concat\n\n");
+    print!("\n\nIn function concatenate\n");
 
     timely::execute(Config::thread(), |worker| {
         // add an input and base computation off of it
@@ -58,7 +53,7 @@ fn join() {
     use differential_dataflow::input::Input;
     use differential_dataflow::operators::Join;
     use timely;
-    print!("\n\nIn function join\n\n");
+    print!("\n\nIn function join\n");
 
     timely::example(|scope| {
         let (mut input1, x) = scope.new_collection();
