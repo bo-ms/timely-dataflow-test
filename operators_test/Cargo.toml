@@ -1,5 +1,5 @@
 [package]
-name = "concat_join_test"
+name = "operators_test"
 version = "0.1.0"
 edition = "2021"
 

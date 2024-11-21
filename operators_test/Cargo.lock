@@ -33,14 +33,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "concat_join_test"
-version = "0.1.0"
-dependencies = [
- "differential-dataflow",
- "timely",
-]
-
-[[package]]
 name = "crossbeam-channel"
 version = "0.5.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -90,6 +82,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "14dbbfd5c71d70241ecf9e6f13737f7b5ce823821063188d7e46c41d371eebd5"
 dependencies = [
  "unicode-width",
+]
+
+[[package]]
+name = "operators_test"
+version = "0.1.0"
+dependencies = [
+ "differential-dataflow",
+ "timely",
 ]
 
 [[package]]
