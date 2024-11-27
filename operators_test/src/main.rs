@@ -204,12 +204,12 @@ fn delay() {
                 .delay( |data, time| {
                     println!("time: {:?}, data: {:?}", time, data);
                     match data.1.as_str() {
-                        "M1" => time + 7,
-                        "M2" => time + 6,
-                        "M3" => time + 5,
-                        "M4" => time + 3,
-                        "M5" => time + 2,
-                        "M6" => time + 1,
+                        "M1" => time + 7, // time: 7
+                        "M2" => time + 6, // time: 6
+                        "M3" => time + 5, // time: 5
+                        "M4" => time + 3, // time: 4
+                        "M5" => time + 2, // time: 3
+                        "M6" => time + 1, // time: 2
                         _ => *time,
                     }
                 })
