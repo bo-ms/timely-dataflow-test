@@ -85,9 +85,7 @@ fn accumulate() {
 
             concatenated_stream
                 .accumulate(Vec::new(), |buffer, data| {
-                    for data in data.iter() {
-                        buffer.push(data.clone());
-                    }
+                    buffer.push(data.clone());
                 })
                 .inspect(|x| println!("accumulated result: {:?}", x));
         });
